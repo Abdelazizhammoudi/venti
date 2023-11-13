@@ -15,8 +15,8 @@ SECRET_KEY = 'django-insecure-17hgo^w66v5*zm930t(nlus&1$_7m44axs93ogt=2b#q2e@6xs
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-     
-ALLOWED_HOSTS = ['*']
+
+ALLOWED_HOSTS = ['.vercel.app', '.now.sh']
 
 
 # Application definition
@@ -61,10 +61,10 @@ CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOW_CREDENTIALS = True
 
 CORS_ALLOWED_ORIGINS = [
-    "*",  # Add your React.js app's URL
+   '.vercel.app', '.now.sh',  # Add your React.js app's URL
 ]
 
-CSRF_TRUSTED_ORIGINS = ["*"]#port 3000 used by react js 
+CSRF_TRUSTED_ORIGINS = ['.vercel.app', '.now.sh']#port 3000 used by react js 
 
 
 #added for authentication and permissions 
