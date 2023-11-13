@@ -52,8 +52,7 @@ INSTALLED_APPS = [
 
 #CORS and sets which domains will have access to my api
 CORS_ORIGIN_WHITELIST = (
-"http://localhost:3000",
-"http://localhost:8000",
+"*"  
 )
 
 
@@ -62,10 +61,10 @@ CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOW_CREDENTIALS = True
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",  # Add your React.js app's URL
+    "*",  # Add your React.js app's URL
 ]
 
-CSRF_TRUSTED_ORIGINS = ["http://localhost:3000"]#port 3000 used by react js 
+CSRF_TRUSTED_ORIGINS = ["*"]#port 3000 used by react js 
 
 
 #added for authentication and permissions 
